@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='marck.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Mesajınız var..</title>
+</head>
+<body>
+    <h1 class="yanan-baslik">Bir Yeni Mesaj<br>
+    <span style="font-size:30px; font-family:'Trebuchet MS', Arial, sans-serif;">
+        (Kalbe tıklar mısın?..)
+    </span>
+    </h1>
+
+    <div class="contenedor">
+        <div class="envoltura-sobre">
+            <div class="sobre">
+                <div class="carta">
+                    <div class="contenido">
+                        <strong>Şeyy</strong>
+                        <p>
+                            "Rabia Kalbi görmek icin Hazirmisin? O Zaman Evet Tusuna Bas😁"</strong>
+                        </p>
+                        <div class="evet-hayir-anim-wrap">
+                            <div class="evet-hayir-container" id="butonlar">
+                                <a class='evet-buton' href="{{ url_for('kalp') }}">Evet 💖</a>
+                                <button type="button" class="evet-buton" id="hayir-btn">HAYIR</button>
+                            </div>
+                            <div id="hayir-error" class="hayir-error">ERROR (Hayır cevabı bulunamadı!)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="corazon"></div>
+            <div class="solapa-derecha"></div>
+            <div class="solapa-izquierda"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
