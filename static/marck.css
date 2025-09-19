@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/MarckScript.ttf') format('truetype');
+}
+
+/* Örnek kullanım */
+body {
+    font-family: 'Marck Script', cursive;
+}
